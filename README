@@ -1,0 +1,45 @@
+Name: Danielle Tucker
+Project: 3 Simulating an ALU and Register Set
+Date: November 2012
+Course: TCSS 371 Machine Org
+
+The purpose of this set of programs is to simulate a computer's ALU (Arithmetic and Logic Unit) which performs basic tasks on a set of 8 registers with 16 bit capacity. A basic user interface is included with this set of files and is ALUSimulator.c. Once compiled you will want to run ALUSimulator.exe.
+
+A makefile has been included with this set of files and specifies the object files needed for this project.  This should be sufficient to provide you the needed commands to create the object files for this project. (Or you could just use the make command and then ./ALUSimulator.exe on the command prompt.)
+
+When ALUSimulator.exe is run, the prompts will look like the following and you will be prompted at each stage:
+_______________________________________________
+ALU Simulator, by Danielle Tucker
+
+Input number of registers to initialize (1 up to 8): <reg_num>
+
+Input values as 16 bit hexadecimal numbers, e.g. FA35 (no leading 0x)
+
+Registers will be loaded in order from R0 to R<reg_num>
+Input register 0: <first number>
+Input register 1: <second number>
+      :
+      :
+Input register <reg_num>: <<reg_num> number>
+
+
+Operations - 1) ADD, 2) SUB, 3) NEG, 4) NOT, 5) AND, 6) OR
+Input operation: <opcode>
+
+Specify registers to operate on
+Source1: <reg number>
+<Source2: <reg number>> [if not a unary operator]
+Destination: <reg number>
+
+Register<src1> <operation> <Register<src2>> --> Register<dest>
+
+Result: <answer>
+
+Condition codes: N = <1|0>, Z = <1|0>, C = <1|0>, O = <1|0>
+
+State of Registers
+Register 0: <hex value>
+.
+.
+.
+Register 7: <hex value>
